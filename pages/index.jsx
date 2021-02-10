@@ -10,7 +10,7 @@ export default function Home({ blog }) {
       </Head>
       {
         blog.map((b, i) => {
-          return <Link key={`a_${i}`} href={`/${b.id}`}><a>{b.title}</a></Link>
+          return <Link key={`a_${i}`} href={`/${b.id}`}><a>link: {b.title}</a></Link>
         })
       }
     </div>
