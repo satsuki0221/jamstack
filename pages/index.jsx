@@ -2,17 +2,18 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 export default function Home({ blog }) {
-  console.log(blog)
   return (
-    <div style={{ padding: 20 }}>
+    <div>
       <Head>
         <title>ゆごのブログ</title>
       </Head>
-      {
-        blog.map((b, i) => {
-          return <Link key={`a_${i}`} href={`/${b.id}`}><a>link: {b.title}</a></Link>
-        })
-      }
+      <ul>
+        {
+          blog.map((b, i) => {
+            return <li><Link key={`a_${i}`} href={`/${b.id}`}><a>link: {b.title}</a></Link></li>
+          })
+        }
+      </ul>
     </div>
   )
 }
