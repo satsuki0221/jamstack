@@ -9,7 +9,7 @@ export default function Home(b) {
         <title>{b.title} | ゆごのブログ</title>
       </Head>
 
-      <div>{b.title}</div>
+      <h1>{b.title}</h1>
 
       <div dangerouslySetInnerHTML={{ __html: b.detail }}></div>
     </div>
