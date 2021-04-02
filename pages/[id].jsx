@@ -24,7 +24,9 @@ export const getStaticPaths = async () => {
     .then(res => res.json())
     .catch(() => null);
 
-  const paths = data.contents.map(item => `/${item.id}`);
+  const paths = ['/wiuabgcgtqx']
+
+  // const paths = data.contents.map(item => `/${item.id}`);
 
   return {
     paths,
