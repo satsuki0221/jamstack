@@ -14,6 +14,8 @@ export default function Home({ blog }) {
           })
         }
       </ul>
+
+      <Link href="contact">お問い合わせ</Link>
     </div>
   )
 }
